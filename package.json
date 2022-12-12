@@ -1,0 +1,33 @@
+{
+  "name": "oas-raml-converter-model",
+  "version": "0.0.18",
+  "description": "This package contains model for oas-raml-converter package.",
+  "main": "./lib/model/index.js",
+  "types": "./lib/model/index.d.ts",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "build": "tsc && node ./generate-flow.js",
+    "publish": "npm run build",
+    "typescript": "tsc",
+    "flowgen": "flowgen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mulesoft/oas-raml-converter-model.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mulesoft/oas-raml-converter-model/issues"
+  },
+  "homepage": "https://github.com/mulesoft/oas-raml-converter-model",
+  "dependencies": {
+    "serializer.ts": "0.0.12"
+  },
+  "devDependencies": {
+    "flowgen": "1.2.0",
+    "typescript": "2.5.2"
+  }
+}
